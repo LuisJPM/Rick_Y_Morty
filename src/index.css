@@ -1,0 +1,105 @@
+
+body {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #5fb4b1;
+  color: #615f5f;
+}
+
+
+div {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  background: #ffffff;
+}
+
+
+.character-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+
+.character-card {
+  border: 2px solid #5282c0;
+  text-align: center;
+  width: 200px;
+  background: #cfe0f0;
+}
+
+.character-card img {
+  max-width: 100%;
+  border-radius: 8px solid #5282c0;
+  border: 2px solid #ddd;
+}
+
+.character-card:hover {
+  transform: scale(1.05);
+}
+
+.character-card h3 {
+  font-size: 1.2rem;
+  color: #067979;
+}
+
+.character-card p {
+  font-size: 0.9rem;
+  color: #0b4692;
+}
+
+
+input[type="text"] {
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  width: calc(100% - 22px);
+  margin-bottom: 16px;
+  font-size: 1rem;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+select {
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #5393d8;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.pagination button:disabled {
+  background: #350c16;
+  cursor: not-allowed;
+}
+
+.pagination button:hover:not(:disabled) {
+  background: #15d6e4;
+  transform: scale(1.05);
+}
+
+.pagination span {
+  font-size: 1rem;
+  margin: 0 15px;
+}
